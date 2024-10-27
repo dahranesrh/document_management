@@ -1,0 +1,10 @@
+module DocumentService {
+    typedef sequence<string> StringSequence;
+
+    interface FileManager {
+        void createFile(in string fileName, in string content);
+        void deleteFile(in string fileName);
+        StringSequence listFiles();
+        string readFile(in string fileName);
+    };
+};

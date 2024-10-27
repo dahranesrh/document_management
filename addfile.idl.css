@@ -1,0 +1,8 @@
+module DocumentService {
+    interface DocumentManager {
+        void createDocument(in string documentName, in string uploadedBy);
+        sequence<string> listDocuments();
+        void filterDocuments(in string filterCriteria);
+        void deleteDocument(in string documentName);
+    };
+};
